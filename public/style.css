@@ -1,0 +1,26 @@
+.cadastro_square {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+form {
+    width: 300px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn{
+    color: rgb(20, 223, 20);
+    background-color: rgb(1, 29, 1);
+}
+
+.caixa_entrada{
+    background-color: rgb(70, 69, 69);
+    border-radius: 5px;
+}
