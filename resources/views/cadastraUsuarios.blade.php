@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.7/dist/full.css" rel="stylesheet" type="text/css" />
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="{{asset('style.css')}}">
     
@@ -15,8 +16,8 @@
 <body>
     <h2 class="">CADASTRO<h2>
     <div class="cadastro_square">
-    <form action="processar_cadastro.php" method="post">
-
+    <form action="/salva-usuario" method="post">
+        @csrf
         <label for="username">Nome de Usuário:</label>
         <input class="caixa_entrada" type="text" id="username" name="username" required><br><br>
 
@@ -24,10 +25,13 @@
         <input class="caixa_entrada" type="text" id="name" name="name" required><br><br>
 
         <label for="name">Info Adicionais:</label>
-        <input class="caixa_entrada" type="text" id="name" name="name" required><br><br>
+        <input class="caixa_entrada" type="text" id="info" name="info" required><br><br>
 
         <label for="email">Email:</label>
         <input class="caixa_entrada" type="email" id="email" name="email" required><br><br>
+
+        <label for="email">Senha:</label>
+        <input class="caixa_entrada" type="senha" id="senha" name="senha" required><br><br>
 
         <button class="btn">Cadastrar</button>
     </form>
